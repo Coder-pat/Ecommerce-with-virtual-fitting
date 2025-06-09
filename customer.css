@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  width: 81px;
+  height: 78px;
+}
+
+.app-name {
+  color: #1e1e1e;
+  font-family: "Italiana";
+  font-size: 20px;
+}
+
+.forgot {
+  color: #cb3123;
+}
+
+img {
+  width: 90%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image {
+  width: 60%;
+}
+
+.reg-details {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding-right: 60px;
+}
+
+h1 {
+  font-family: "Instrument sans";
+}
+
+.toggle {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  width: 95%;
+  justify-content: space-between;
+  height: 38px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg {
+  background-color: #cb3123;
+  width: 170px;
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.bg a {
+  color: white;
+}
+
+.trans a {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Instrument sans";
+}
+
+.trans {
+  background-color: white;
+  width: 170px;
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.trans:hover {
+  background-color: grey;
+}
+
+input {
+  height: 40px;
+  border-radius: 10px;
+  font-family: "Instrument sans";
+  padding-left: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid black;
+}
+
+button {
+  height: 45px;
+  background-color: #cb3123;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-family: "Instrument sans";
+  font-size: 17px;
+}
+
+p {
+  font-family: "Instrument sans";
+}
+
+p a {
+  color: #cb3123;
+}
