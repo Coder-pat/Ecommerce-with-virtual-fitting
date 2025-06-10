@@ -94,6 +94,9 @@ html {
   border-radius: 20px;
   font-family: "Instrument Sans";
   color: black;
+  background-color: #9a1e14;
+  border-radius: 20px;
+  font-family: "Instrument Sans";
 }
 
 .trending {
@@ -116,6 +119,9 @@ html {
   flex-direction: row;
   margin-left: 0;
   width: 100%;
+  gap: 150px;
+  position: relative;
+  left: 0;
 }
 
 .p-d {
@@ -163,6 +169,7 @@ html {
 
 .p-de:nth-child(4) {
   margin-left: 150px;
+  left: 0;
 }
 
 footer {
