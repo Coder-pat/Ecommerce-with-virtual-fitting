@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
 .up {
   margin: 10px;
   display: flex;
@@ -6,6 +14,11 @@
   padding: 10px 25px;
   position: relative;
   height: 40px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -17,4 +30,125 @@
   color: #1e1e1e;
   font-family: "Italiana";
   font-size: 20px;
+}
+
+.svg {
+  width: 30px;
+  height: 30px;
+}
+
+.center-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-weight: bold;
+  font-family: "Instrument Sans";
+}
+
+.banner {
+  background-color: #9a1e14;
+  display: flex;
+  width: 98%;
+  height: 400px;
+  margin: 10px;
+  border-radius: 40px;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+}
+
+.black-red {
+  width: 500px;
+  height: 700px;
+  display: flex;
+  margin-top: 0;
+  margin-right: 30px;
+}
+
+.sale {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 70px;
+  font-family: "Instrument Sans";
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  background-color: #9a1e14;
+  border-radius: 20px;
+  font-family: "Instrument Sans";
+}
+
+.trending {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trend {
+  display: flex;
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  position: relative;
+  left: 0;
+}
+
+.p-d {
+  position: relative;
+  left: 0;
+}
+
+footer {
+  background-color: #767676;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-right: 10px;
+  color: white;
+}
+
+.app-n {
+  color: #fff;
+  font-family: "Italiana";
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Instrument sans";
+}
+
+h1 {
+  margin-left: 20px;
 }
