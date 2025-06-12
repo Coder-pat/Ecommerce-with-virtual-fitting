@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.up {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  position: relative;
+  height: 40px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.svg {
+  width: 25px;
+  height: 25px;
+}
+
+.logo {
+  width: 81px;
+  height: 78px;
+}
+
+.app-name {
+  color: #1e1e1e;
+  font-family: "Italiana";
+  font-size: 20px;
+}
+
+.app-n {
+  color: #fff;
+  font-family: "Italiana";
+  font-size: 20px;
+}
+
+footer {
+  background-color: #767676;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  color: white;
+  position: absolute;
+  top: 800px;
+}
+
+.pink {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: 730px;
+  background-color: #fbbdb8;
+  margin-bottom: 0;
+  position: absolute;
+  top: 90px;
+}
+
+.photo {
+  border-radius: 20px;
+  margin-left: 70px;
+}
+
+.app-n {
+  color: #fff;
+  font-family: "Italiana";
+  font-size: 20px;
+}
+
+p {
+  font-family: "Instrument sans";
+}
+
+footer :nth-child(2) {
+  padding-right: 10px;
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  outline: dashed;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+button {
+  height: 45px;
+  width: 300px;
+  background-color: #cb3123;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-family: "Instrument sans";
+  font-size: 17px;
+  position: absolute;
+  right: 335px;
+  top: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.photo {
+  border-radius: 20px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+
+.pic {
+  width: 500px;
+  height: 600px;
+  margin-top: 40px;
+}
+
+.names,
+.values {
+  display: flex;
+  flex-direction: column;
+}
+
+.measure {
+  position: absolute;
+  top: 230px;
+  right: 400px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+h1 {
+  position: absolute;
+  top: 160px;
+  right: 350px;
+  font-family: "Instrument sans";
+}

@@ -21,6 +21,11 @@ html {
   align-items: center;
 }
 
+.svg {
+  width: 30px;
+  height: 30px;
+}
+
 .logo {
   width: 81px;
   height: 78px;
@@ -48,8 +53,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 40px;
-  padding-right: 10px;
+  margin-top: 95px;
   color: white;
 }
 
@@ -62,4 +66,51 @@ footer {
 p,
 h1 {
   font-family: "Instrument sans";
+}
+
+img {
+  width: 375px;
+  height: 375px;
+}
+
+.cart {
+  margin-left: 120px;
+}
+
+button {
+  height: 45px;
+  width: 100%;
+  background-color: #cb3123;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-family: "Instrument sans";
+  font-size: 17px;
+}
+
+p,
+h1 {
+  font-family: "Instrument sans";
+}
+
+h1 {
+  font-size: 64px;
+}
+
+.info {
+  font-size: 30px;
+}
+
+.cart-info {
+  position: absolute;
+  right: 10%;
+  top: 17%;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer :nth-child(2) {
+  padding-right: 10px;
 }

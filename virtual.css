@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.up {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  position: relative;
+  height: 40px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.svg {
+  width: 30px;
+  height: 30px;
+}
+
+.logo {
+  width: 81px;
+  height: 78px;
+}
+
+.app-name {
+  color: #1e1e1e;
+  font-family: "Italiana";
+  font-size: 20px;
+}
+
+.pink {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: 700px;
+  background-color: #fbbdb8;
+  margin-bottom: 0;
+}
+
+.photo {
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 60px;
+  width: 30%;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.app-n {
+  color: #fff;
+  font-family: "Italiana";
+  font-size: 20px;
+}
+
+p {
+  font-family: "Instrument sans";
+}
+
+footer :nth-child(2) {
+  padding-right: 10px;
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  outline: dashed;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+button {
+  height: 45px;
+  background-color: #cb3123;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-family: "Instrument sans";
+  font-size: 17px;
+  margin: 0;
+  width: 80%;
+  position: absolute;
+  bottom: 30px;
+  left: 35px;
+}
+
+.grey {
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+}
+
+footer {
+  background-color: #767676;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+  color: white;
+  position: absolute;
+  top: 790px;
+}
+
+.app-n {
+  color: #fff;
+  font-family: "Italiana";
+  font-size: 20px;
+}

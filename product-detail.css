@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.up {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  position: relative;
+  height: 40px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.svg {
+  width: 30px;
+  height: 30px;
+}
+
+.logo {
+  width: 81px;
+  height: 78px;
+}
+
+.app-name {
+  color: #1e1e1e;
+  font-family: "Italiana";
+  font-size: 20px;
+}
+
+footer {
+  background-color: #767676;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+  padding-right: 10px;
+  color: white;
+}
+
+.app-n {
+  color: #fff;
+  font-family: "Italiana";
+  font-size: 20px;
+}
+
+footer {
+  background-color: #767676;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  color: white;
+}
+
+.app-n {
+  color: #fff;
+  font-family: "Italiana";
+  font-size: 20px;
+}
+
+.dress {
+  border-radius: 20px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+
+img {
+  width: 500px;
+  height: 650px;
+}
+
+.product-info {
+  position: absolute;
+  right: 20%;
+  top: 40%;
+}
+
+.svg {
+  width: 34px;
+  height: 35px;
+}
+
+p {
+  font-family: "Instrument sans";
+}
+
+.red {
+  color: #9a1e14;
+  font-size: 36px;
+}
+
+.bold {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.info,
+.brand {
+  font-size: 36px;
+}
+
+.brand {
+  margin-top: 0;
+}
+
+button {
+  display: flex;
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  gap: 8px; /* space between icon and text */
+  height: 45px;
+  width: 100%;
+  background-color: #cb3123;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-family: "Instrument sans";
+  font-size: 17px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer :nth-child(2) {
+  padding-right: 10px;
+}
