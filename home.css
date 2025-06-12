@@ -90,9 +90,10 @@ html {
   align-items: center;
   width: 200px;
   height: 60px;
-  background-color: #9a1e14;
+  background-color: #d9d9d9;
   border-radius: 20px;
   font-family: "Instrument Sans";
+  color: black;
 }
 
 .trending {
@@ -113,14 +114,55 @@ html {
 .desc {
   display: flex;
   flex-direction: row;
-  gap: 150px;
-  position: relative;
-  left: 0;
+  margin-left: 0;
+  width: 100%;
 }
 
 .p-d {
   position: relative;
-  left: 0;
+}
+
+.p-d:nth-child(1) {
+  margin-left: 40px;
+}
+
+.p-d:nth-child(2) {
+  margin-left: 50px;
+}
+
+.p-d:nth-child(3) {
+  margin-left: 50px;
+}
+
+.p-d:nth-child(4) {
+  margin-left: 200px;
+}
+
+.descr {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+  width: 100%;
+}
+
+.p-de {
+  position: relative;
+}
+
+.p-de:nth-child(1) {
+  margin-left: 40px;
+}
+
+.p-de:nth-child(2) {
+  margin-left: 160px;
+}
+
+.p-de:nth-child(3) {
+  margin-left: 180px;
+}
+
+.p-de:nth-child(4) {
+  margin-left: 150px;
 }
 
 footer {
@@ -145,10 +187,16 @@ a {
   text-decoration: none;
 }
 
-p {
+p,
+h1 {
   font-family: "Instrument sans";
 }
 
 h1 {
   margin-left: 20px;
+}
+
+#active {
+  background-color: #9a1e14;
+  color: #fff;
 }
