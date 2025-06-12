@@ -31,12 +31,14 @@
           <div class="trans"><a href="/business.html">Business</a></div>
         </div>
         <br />
-        <input type="text" placeholder="Name" id="name" /><br />
-        <input type="email" placeholder="Email" id="email" /><br />
-        <input type="password" placeholder="Password" id="password" /><br />
-        <button id="registerBtn">Register</button>
-        <br />
-        <p>Have an account? <a href="login-customer.html">Sign In</a></p>
+        <form action="backend/customer.php" method="POST">
+          <input type="text" placeholder="Name" id="name" /><br />
+          <input type="email" placeholder="Email" id="email" /><br />
+          <input type="password" placeholder="Password" id="password" /><br />
+          <button id="registerBtn">Register</button>
+          <br />
+          <p>Have an account? <a href="login-customer.html">Sign In</a></p>
+        </form>
       </div>
     </main>
     <footer>
