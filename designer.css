@@ -17,6 +17,10 @@
   font-size: 20px;
 }
 
+.forgot {
+  color: #cb3123;
+}
+
 img {
   width: 90%;
   height: 600px;
@@ -46,11 +50,11 @@ h1 {
 }
 
 .toggle {
-  border: 1px solid black; /* Black stroke */
-  border-radius: 30px; /* Rounded corners */
-  padding: 5px; /* Optional: space inside the box */
-  display: inline-flex; /* Align the links horizontally */
-  gap: 10px; /* Space between the links */
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px;
+  display: inline-flex;
+  gap: 10px;
   align-items: center;
   width: 95%;
   justify-content: space-between;
@@ -65,28 +69,6 @@ footer {
 }
 
 .bg {
-  background-color: #cb3123;
-  width: 170px;
-  border-radius: 30px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.bg a {
-  color: white;
-}
-
-.trans a {
-  color: black;
-}
-
-a {
-  text-decoration: none;
-  font-family: "Instrument sans";
-}
-
-.trans {
   background-color: white;
   width: 170px;
   border-radius: 30px;
@@ -95,11 +77,29 @@ a {
   justify-content: center;
 }
 
-.forgot {
-  color: #cb3123;
+.bg a {
+  color: black;
 }
 
-.trans:hover {
+.trans a {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Instrument sans";
+}
+
+.trans {
+  background-color: #cb3123;
+  width: 170px;
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.bg:hover {
   background-color: grey;
 }
 
@@ -117,8 +117,8 @@ button {
   background-color: #cb3123;
   border-radius: 10px;
   color: white;
-  font-family: "Instrument sans";
   border: none;
+  font-family: "Instrument sans";
   font-size: 17px;
 }
 

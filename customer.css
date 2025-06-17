@@ -129,3 +129,64 @@ p {
 p a {
   color: #cb3123;
 }
+
+/*Phones*/
+@media (min-width: 320px) and (max-width: 600px) {
+  .app-name {
+    color: #1e1e1e;
+    font-family: "Italiana";
+    font-size: 15px;
+  }
+
+  .logo {
+    width: 55px;
+    height: 50px;
+  }
+
+  .reg-details {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 45px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+
+/*Tablets*/
+@media (min-width: 601px) and (max-width: 1024px) {
+  .app-name {
+    color: #1e1e1e;
+    font-family: "Italiana";
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 75px;
+    height: 70px;
+  }
+
+  .image {
+    width: 45%;
+  }
+
+  .reg-details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-right: 60px;
+  }
+}

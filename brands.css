@@ -105,3 +105,88 @@ footer {
 a {
   text-decoration: none;
 }
+
+/*Phones*/
+@media (min-width: 320px) and (max-width: 600px) {
+  .app-name {
+    display: none;
+  }
+
+  .svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  h1 {
+    font-family: "Instrument sans";
+    font-size: 1.5rem;
+    position: absolute;
+    left: 20%;
+  }
+
+  .brand {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    background-color: #9a1e14;
+    border-radius: 40px;
+    color: white;
+    font-family: "Instrument sans";
+    font-size: 20px;
+    height: 200px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .brand-select {
+    height: 200px;
+    display: flex;
+  }
+
+  footer {
+    background-color: #767676;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 540px;
+    padding-right: 10px;
+    color: white;
+  }
+}
+
+/*Tablets*/
+@media (min-width: 601px) and (max-width: 1024px) {
+  .app-name {
+    color: #1e1e1e;
+    font-family: "Italiana";
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 75px;
+    height: 70px;
+  }
+
+  .image {
+    width: 45%;
+  }
+
+  .reg-details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-right: 60px;
+  }
+}

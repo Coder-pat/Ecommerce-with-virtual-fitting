@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  border: 1px black;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  position: relative;
+  height: 40px;
+  border-radius: 20px;
+  width: 90%;
+}
+
+.search-container {
+  border: 1px black;
+  width: 50%;
+  height: 70px;
+  border-radius: 20px;
+}
+
+.svg {
+  width: 30px;
+  height: 30px;
+}
