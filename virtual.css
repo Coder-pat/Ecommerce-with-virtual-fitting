@@ -44,6 +44,8 @@ html {
   height: 700px;
   background-color: #fbbdb8;
   margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .photo {
@@ -127,4 +129,33 @@ footer {
   color: #fff;
   font-family: "Italiana";
   font-size: 20px;
+}
+
+/*Test*/
+.fitting-area {
+  position: absolute;
+  right: 0;
+  width: 400px;
+  height: 600px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+.clothing {
+  opacity: 0.95;
+}
+
+#canvas {
+  border: 2px solid #000;
+  margin-top: 20px;
+  max-width: 100%;
 }

@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
   </head>
   <body>
     <div class="up">
@@ -33,13 +34,27 @@
     <div class="pink">
       <div class="photo">
         <div class="upload">
-            <img src="/svgs/plus.svg" alt="plus sign">
-            <p>Upload an image of yourself</p>
-                      <input type="file" id="bodyUpload" accept="image/*">
+          <img src="/svgs/plus.svg" alt="plus sign" />
+          <p>Upload an image of yourself</p>
+          <input type="file" id="bodyUpload" accept="image/*" />
         </div>
         <div class="grey">
-            <a href="/measure.html"><button>Generate</button></a>
+          <a href="/measure.html"><button>Generate</button></a>
         </div>
+      </div>
+      <div class="virtual">
+        <label>Upload Clothing Image:</label>
+        <input type="file" id="clothingUpload" accept="image/*" />
+
+        <div class="fitting-area">
+          <img id="bodyImage" class="layer" />
+          <img
+            id="clothingImage"
+            class="layer clothing"
+            style="transform: translate(0px, 0px); width: 150px"
+          />
+        </div>
+      </div>
     </div>
     <footer>
       <div class="name">
@@ -48,5 +63,6 @@
       </div>
       <p>@ 2025 TrendTrade</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

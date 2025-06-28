@@ -30,31 +30,20 @@
     </div>
     <hr />
     <div class="pink">
-      <h1>Body Measurements</h1>
-      <div class="photo">
-        <img
-          src="/images/♡ (1) 1.png"
-          alt="woman with back turned"
-          class="pic"
-        />
-      </div>
       <div class="measure">
-        <div class="names">
-          <p>Height</p>
-          <p>Weight</p>
-          <p>Bust</p>
-          <p>Waist</p>
-          <p>Shoulder-Waist</p>
-          <p>Hip</p>
         </div>
-        <div class="values">
-          <p>170cm</p>
-          <p>170cm</p>
-          <p>170cm</p>
-          <p>170cm</p>
-          <p>170cm</p>
-          <p>170cm</p>
-        </div>
+        <input type="file" id="imageUpload" accept="image/*" />
+        <canvas id="canvas" width="740" height="480"></canvas>
+        <div class="measurements">
+                <h1>Body Measurements</h1>
+<p>Height: <span id="heightValue">--</span></p>
+<p>Shoulder Width: <span id="shoulderValue">--</span></p>
+<p>Hip Width: <span id="hipValue">--</span></p>
+<p>Waist: <span id="waistValue">--</span></p>
+<p>Inseam: <span id="inseamValue">--</span></p>
+</div>
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
       </div>
     </div>
     <a href="/measure.html"
@@ -69,5 +58,6 @@
       </div>
       <p>@ 2025 TrendTrade</p>
     </footer>
+    <script src="pose.js"></script>
   </body>
 </html>
