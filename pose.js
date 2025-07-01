@@ -34,6 +34,30 @@ pose.onResults((results) => {
     const measurements = calculateMeasurements(results.poseLandmarks);
     console.log("Estimated Measurements:", measurements);
 
+    // ⬇️ Send to backend
+fetch("http://localhost:5000/api/measurements/", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    height: measurements.height,
+    shoulderWidth: measurements.shoulderWidth,
+    hip: measurements.hip,
+    waist: measurements.waist,
+    inseam: measurements.inseam,
+    userId: "abena123" // 🔁 replace with actual user if needed
+  }),
+})
+  .then((res) => res.json())
+  .then((data) => {
+    console.log("✅ Measurement data sent successfully:", data);
+  })
+  .catch((err) => {
+    console.error("❌ Failed to send measurement data:", err);
+  });
+
+
     document.getElementById("heightValue").textContent = measurements.height + " in";
     document.getElementById("shoulderValue").textContent = measurements.shoulderWidth + " in";
     document.getElementById("hipValue").textContent = measurements.hip + " in";

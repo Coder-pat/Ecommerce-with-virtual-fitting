@@ -4,17 +4,13 @@ function sendDressToVirtual() {
     window.location.href = "/virtual.html";
   }
 
-   window.onload = function () {
+  // Load the selected image from localStorage
+  window.onload = function () {
     const imageSrc = localStorage.getItem("selectedDressImage");
-
     if (imageSrc) {
-      const dressImg = document.getElementById("dressImage");
-      dressImg.src = imageSrc;
-      dressImg.alt = "Selected Dress";
-
-      // Optional: Clear the localStorage after loading
-      // localStorage.removeItem("selectedDressImage");
+      document.getElementById("dressImage").src = imageSrc;
     } else {
-      console.warn("No image found in localStorage.");
+      // Optional fallback image
+      document.getElementById("dressImage").src = "images/default-dress.jpg";
     }
   };

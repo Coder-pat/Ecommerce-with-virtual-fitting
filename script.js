@@ -121,3 +121,49 @@ document.getElementById("bodyUpload").addEventListener("change", function () {
 
   reader.readAsDataURL(file);
 });
+
+document.getElementById("bodyUpload").addEventListener("change", function () {
+  const file = this.files[0];
+  if (!file) return;
+
+  const formData = new FormData();
+  formData.append('image', file);
+
+  fetch('http://localhost:3000/upload', {
+    method: 'POST',
+    body: formData
+  })
+    .then(res => res.json())
+    .then(data => {
+      const img = document.getElementById("bodyImage");
+      img.src = data.imageUrl; // path from server response
+    })
+    .catch(err => console.error("Upload error:", err));
+});
+
+document.getElementById('saveFittingBtn').addEventListener('click', function () {
+  const fittingArea = document.querySelector('.fitting-area');
+
+  html2canvas(fittingArea).then(canvas => {
+    canvas.toBlob(blob => {
+      const formData = new FormData();
+      formData.append('fittingImage', blob, 'fitting.png');
+      formData.append('userId', '1'); // You can replace this with dynamic user ID
+      formData.append('productId', '123'); // You can replace this with the actual product ID
+
+      fetch('http://localhost:3000/api/fitting/upload', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Fitting uploaded successfully:', data);
+        alert('Fitting saved!');
+      })
+      .catch(error => {
+        console.error('Error uploading fitting:', error);
+        alert('Error uploading fitting');
+      });
+    }, 'image/png');
+  });
+});

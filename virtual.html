@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   </head>
   <body>
     <div class="up">
@@ -39,7 +40,10 @@
           <input type="file" id="bodyUpload" accept="image/*" />
         </div>
         <div class="grey">
-          <a href="/measure.html"><button>Measure</button></a>
+          <button type="button" onclick="saveFitting()">Save Fitting</button>
+          <button type="button" onclick="window.location.href='/measure.html'">
+            Measure
+          </button>
         </div>
       </div>
       <div class="virtual">
