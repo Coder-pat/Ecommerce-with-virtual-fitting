@@ -35,9 +35,5 @@ router.post('/upload', upload.single('bodyImage'), (req, res) => {
   res.status(200).json({ message: 'Fitting saved', data: fittingInfo });
 });
 
+// ✅ Export router
 module.exports = router;
-
-app.post('/api/fitting/upload', upload.single('fittingImage'), (req, res) => {
-  // Save image in uploads folder or database
-});
-

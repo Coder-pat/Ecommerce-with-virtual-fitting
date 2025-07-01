@@ -10,11 +10,11 @@ router.post('/', (req, res) => {
   res.status(200).json({ message: 'Measurements saved successfully' });
 });
 
-module.exports = router;
-
 // routes/measurements.js
 router.post('/', (req, res) => {
   const data = req.body;
   console.log("Received measurements:", data);
   res.status(200).json({ message: "Measurements saved" });
 });
+
+module.exports = router;

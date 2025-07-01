@@ -12,7 +12,6 @@ app.use(bodyParser.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Routes (make sure these files exist)
-app.use('/api/products', require('./routes/products'));
 app.use('/api/fitting', require('./routes/fitting')); // /api/fitting/upload will be handled there
 app.use('/api/measurements', require('./routes/measurements'));
 
