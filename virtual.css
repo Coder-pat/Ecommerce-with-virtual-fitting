@@ -132,9 +132,13 @@ footer {
 }
 
 /*Test*/
+.virtual {
+  display: flex;
+  justify-content: flex-end; /* Aligns child to the right */
+  width: 100%;
+}
 .fitting-area {
-  position: absolute;
-  right: 0;
+  position: relative;
   width: 400px;
   height: 600px;
   border: 1px solid #ddd;
@@ -150,12 +154,17 @@ footer {
   height: auto;
 }
 
-.clothing {
-  opacity: 0.95;
-}
-
 #canvas {
   border: 2px solid #000;
   margin-top: 20px;
   max-width: 100%;
+}
+
+#dressImage {
+  z-index: 2;
+  opacity: 0.95;
+}
+
+#bodyImage {
+  z-index: 1;
 }

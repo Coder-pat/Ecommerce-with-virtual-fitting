@@ -9,7 +9,7 @@ function previewImage(inputElement, imgId) {
     img.src = e.target.result;
 
     // For clothing image: reset size & position
-    if (imgId === "clothingImage") {
+    if (imgId === "dressImage") {
       img.style.width = "150px";
       img.style.transform = "translate(0px, 0px)";
       img.setAttribute("data-x", 0);
@@ -24,12 +24,9 @@ document.getElementById("bodyUpload").addEventListener("change", function () {
   previewImage(this, "bodyImage");
 });
 
-document.getElementById("clothingUpload").addEventListener("change", function () {
-  previewImage(this, "clothingImage");
-});
 
 // Enable drag and resize for clothing image
-interact("#clothingImage")
+interact("#dressImage")
   .draggable({
     onmove: dragMoveListener
   })
@@ -75,3 +72,52 @@ function dragMoveListener(event) {
   target.setAttribute("data-y", y);
 }
 
+ const dressSrc = localStorage.getItem('selectedDress');
+if (dressSrc) {
+  const img = document.createElement('img');
+  img.src = dressSrc;
+  img.id = "dressImage"; // ✅ give it the expected ID
+  img.alt = "Selected Dress";
+  img.style.position = "absolute"; // ✅ required for z-index
+  img.style.zIndex = "2"; // ✅ make sure it's on top
+  img.style.width = "150px"; // or whatever default size
+  img.setAttribute("data-x", 0);
+  img.setAttribute("data-y", 0);
+  img.style.transform = "translate(0px, 0px)";
+  document.querySelector('.fitting-area').appendChild(img);
+}
+
+document.getElementById("bodyUpload").addEventListener("change", function () {
+  const file = this.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = function (e) {
+    const base64 = e.target.result;
+    document.getElementById("bodyImage").src = base64;
+
+    // Save to localStorage so it can be used in measure.html
+    localStorage.setItem("uploadedBody", base64);
+  };
+  reader.readAsDataURL(file);
+});
+
+document.getElementById("bodyUpload").addEventListener("change", function () {
+  const file = this.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+
+  reader.onload = function (e) {
+    const base64 = e.target.result;
+    const bodyImage = document.getElementById("bodyImage");
+
+    // Display the uploaded image
+    bodyImage.src = base64;
+
+    // Save to localStorage for use in measure.html
+    localStorage.setItem("uploadedBody", base64);
+  };
+
+  reader.readAsDataURL(file);
+});
