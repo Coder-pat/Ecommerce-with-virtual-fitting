@@ -35,7 +35,7 @@ pose.onResults((results) => {
     console.log("Estimated Measurements:", measurements);
 
     // ⬇️ Send to backend
-fetch("http://localhost:5000/api/measurements/", {
+fetch("http://localhost/trendtrade/save_measurements.php", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -78,14 +78,17 @@ window.onload = function () {
       canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
       canvasCtx.drawImage(img, 0, 0);
 
-      // ✅ Send to MediaPipe for analysis
-      pose.send({ image: img });
+      // ✅ Delay the pose.send slightly
+      setTimeout(() => {
+        pose.send({ image: img });
+      }, 500); // Wait for pose.onResults to be set and model to be ready
     };
     img.src = bodyImageData;
   } else {
     console.log("No uploadedBody found in localStorage.");
   }
 };
+
 
 // 🧠 Measurement calculation
 function calculateMeasurements(landmarks, assumedHeightInches = 65) {

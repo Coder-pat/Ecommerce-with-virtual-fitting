@@ -167,3 +167,28 @@ document.getElementById('saveFittingBtn').addEventListener('click', function () 
     }, 'image/png');
   });
 });
+
+function saveFitting() {
+  const bodyImg = document.getElementById("bodyImage").src;
+  const dressImg = document.getElementById("dressImage").src;
+
+  fetch("http://localhost/trendtrade/save_fitting.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      user: "Abena",
+      bodyImage: bodyImg,
+      dressImage: dressImg,
+    }),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      if (data.success) {
+        alert("Fitting saved successfully!");
+      } else {
+        alert("Error: " + data.error);
+      }
+    });
+}

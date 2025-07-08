@@ -87,6 +87,7 @@ menu {
   border: none;
   border-top: 1px dashed black;
   margin: 10px;
+  width: 90%;
 }
 
 .profile-container {
@@ -116,7 +117,7 @@ menu {
 
 main {
   width: 75%;
-  height: 700px;
+  height: 1080px;
   border: 1px solid black;
   border-radius: 20px;
   margin: 10px;
@@ -189,13 +190,12 @@ footer {
   flex-direction: column;
 }
 
-.second-row {
+.first-column {
   border: 1px solid black;
   border-radius: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 200px;
+  flex-direction: column;
+  height: 560px;
   padding: 0 25px;
   margin: 25px 20px 0 20px;
 }
@@ -223,4 +223,105 @@ p {
 
 span {
   font-family: "Instrument sans";
+}
+
+h1 {
+  margin-left: 50px;
+  font-family: "Instrument sans";
+}
+
+h2 {
+  margin-left: 10px;
+  font-family: "Instrument sans";
+}
+
+.second-column {
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 430px;
+  padding: 0 25px;
+  margin: 25px 20px 0 20px;
+}
+
+.small-img {
+  width: 68px;
+  height: 68px;
+}
+
+.mini-one {
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mini-two {
+  padding: 2px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+  width: 100%;
+  height: 0;
+}
+
+.third-column {
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  padding: 0 25px;
+  margin: 25px 20px 0 20px;
+}
+
+.customer {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+button {
+  height: 45px;
+  background-color: #cb3123;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-family: "Instrument sans";
+  font-size: 17px;
+  margin-top: 20px;
+  margin-left: 780px;
+  width: 20%;
+}
+
+.image {
+  width: 300px;
+  height: 420px;
+  border-radius: 20px;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.trend {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }

@@ -107,7 +107,7 @@ a {
 }
 
 /*Phones*/
-@media (min-width: 320px) and (max-width: 600px) {
+/*@media (min-width: 320px) and (max-width: 600px) {
   .app-name {
     display: none;
   }
@@ -163,10 +163,10 @@ a {
     padding-right: 10px;
     color: white;
   }
-}
+}*/
 
 /*Tablets*/
-@media (min-width: 601px) and (max-width: 1024px) {
+/*@media (min-width: 601px) and (max-width: 1024px) {
   .app-name {
     color: #1e1e1e;
     font-family: "Italiana";
@@ -188,5 +188,112 @@ a {
     flex-direction: column;
     margin-top: 10px;
     padding-right: 60px;
+  }
+}*/
+
+/* Tablets (portrait and landscape) */
+@media (max-width: 1024px) and (min-width: 601px) {
+  .up {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .center-text {
+    position: static;
+    transform: none;
+    margin-top: 5px;
+  }
+
+  .top {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .brand-select {
+    justify-content: center;
+  }
+
+  .brand {
+    width: 300px;
+    height: 300px;
+    font-size: 36px;
+  }
+
+  h1 {
+    left: 0;
+    text-align: center;
+  }
+}
+
+/* Phones (small devices) */
+@media (max-width: 600px) {
+  .up {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    gap: 8px;
+  }
+
+  .logo {
+    width: 60px;
+    height: auto;
+  }
+
+  .app-name {
+    font-size: 16px;
+  }
+
+  .center-text {
+    position: static;
+    transform: none;
+    font-size: 14px;
+  }
+
+  .top {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .brand-select {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+  }
+
+  .brand {
+    width: 96%;
+    height: 180px;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 20px;
+    left: 0;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .app-n {
+    font-size: 16px;
   }
 }
