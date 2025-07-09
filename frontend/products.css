@@ -117,7 +117,7 @@ menu {
 
 main {
   width: 75%;
-  height: 920px;
+  height: 1080px;
   border: 1px solid black;
   border-radius: 20px;
   margin: 10px;
@@ -140,12 +140,13 @@ main {
   flex-direction: column;
 }
 
-.first-row,
-.third-row {
+.first-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 25px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 footer {
@@ -294,4 +295,253 @@ hr {
   gap: 150px;
   margin-left: 50px;
   margin-top: 40px;
+}
+
+button {
+  height: 45px;
+  background-color: #cb3123;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-family: "Instrument sans";
+  font-size: 17px;
+  margin-top: 20px;
+  margin-left: 780px;
+  width: 20%;
+}
+
+.image {
+  width: 300px;
+  height: 420px;
+  border-radius: 20px;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.trend {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* ========== TABLET (768px - 1024px) ========== */
+@media screen and (max-width: 1024px) {
+  nav {
+    flex-direction: row;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+    width: 90%;
+  }
+
+  .search-container {
+    position: static;
+    transform: none;
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .search {
+    background-color: #9a1e14;
+    width: 8%;
+    height: 45%;
+    right: 27%;
+  }
+
+  .icon {
+    position: static;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  menu {
+    width: 40%;
+    height: 60%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10px;
+    padding-bottom: 20px;
+  }
+
+  main {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-row {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .trend {
+    width: 45%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+/* ========== PHONE (max-width: 767px) ========== */
+@media screen and (max-width: 767px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .search-container {
+    width: 280%;
+    height: 35px;
+  }
+
+  .search {
+    background-color: #9a1e14;
+    width: 15%;
+    height: 45%;
+    right: 27%;
+  }
+
+  .search-text {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .icon {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    right: 0;
+    gap: 10px;
+  }
+
+  .svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  menu {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 20px;
+  }
+
+  .dashboard,
+  .product,
+  .orders {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  main {
+    width: 90%;
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .first-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .trend {
+    width: 90%;
+    text-align: center;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .first-column,
+  .second-column,
+  .third-column {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .small-img {
+    width: 55px;
+    height: 55px;
+  }
+
+  button {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 15px;
+  }
+
+  .app-n {
+    font-size: 18px;
+  }
+
+  .down-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  footer {
+    flex-direction: row;
+    text-align: center;
+    gap: 8px;
+    padding: 15px 0;
+  }
 }

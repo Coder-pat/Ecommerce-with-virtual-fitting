@@ -117,7 +117,7 @@ menu {
 
 main {
   width: 75%;
-  height: 1080px;
+  height: 920px;
   border: 1px solid black;
   border-radius: 20px;
   margin: 10px;
@@ -296,32 +296,198 @@ hr {
   margin-top: 40px;
 }
 
-button {
-  height: 45px;
-  background-color: #cb3123;
-  border-radius: 10px;
-  color: white;
-  border: none;
-  font-family: "Instrument sans";
-  font-size: 17px;
-  margin-top: 20px;
-  margin-left: 780px;
-  width: 20%;
+/* ========== TABLET STYLES ========== */
+@media screen and (max-width: 1024px) {
+  nav {
+    flex-direction: row;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+    width: 90%;
+  }
+
+  .search-container {
+    position: static;
+    transform: none;
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .search {
+    background-color: #9a1e14;
+    width: 8%;
+    height: 45%;
+    right: 27%;
+  }
+
+  .icon {
+    position: static;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .main-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  menu {
+    width: 30%;
+    height: 60%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10px;
+    padding-bottom: 20px;
+  }
+
+  main {
+    width: 60%;
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .first-column,
+  .second-column,
+  .third-column {
+    height: auto;
+  }
+
+  .first-column,
+  .second-column {
+    padding-bottom: 20px;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+  }
+
+  .mini-one {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .money-info {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
-.image {
-  width: 300px;
-  height: 420px;
-  border-radius: 20px;
-}
+/* ========== PHONE STYLES ========== */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    width: 80%;
+    margin-left: 20px;
+  }
 
-.first-row {
-  display: flex;
-  flex-direction: row;
-}
+  .logo {
+    display: none;
+  }
 
-.trend {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  .search-container {
+    width: 280%;
+    height: 35px;
+  }
+
+  .search {
+    background-color: #9a1e14;
+    width: 15%;
+    height: 45%;
+    right: 27%;
+  }
+
+  .svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    right: 0;
+    gap: 10px;
+  }
+
+  menu {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 20px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    width: 90%;
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .first-column,
+  .second-column,
+  .third-column {
+    height: auto;
+  }
+
+  .first-column,
+  .second-column {
+    padding-bottom: 20px;
+  }
+
+  .first-column {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .small-img {
+    width: 80px;
+    height: auto;
+  }
+
+  .mini-one {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .info {
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+  }
+
+  h1,
+  h2 {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  footer {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .down-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .app-n {
+    font-size: 18px;
+  }
 }
