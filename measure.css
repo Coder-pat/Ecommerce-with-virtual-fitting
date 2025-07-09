@@ -166,3 +166,150 @@ canvas {
   background-color: #fff;
   padding-left: 10px;
 }
+
+/* ------------------- TABLET (max-width: 1024px) ------------------- */
+@media (max-width: 1024px) {
+  .up {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    text-align: center;
+  }
+
+  .svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .logo {
+    width: 60px;
+    height: auto;
+  }
+
+  .app-name {
+    font-size: 18px;
+  }
+
+  .pink {
+    height: auto;
+    position: relative;
+    padding-bottom: 150px;
+    top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .measure {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    gap: 40px;
+    padding-top: 50px;
+  }
+
+  canvas {
+    width: 90%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .measurements {
+    position: static;
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+
+  button {
+    position: static;
+    margin: 30px auto 0;
+    width: 80%;
+  }
+
+  footer {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+}
+
+/* ------------------- PHONE (max-width: 767px) ------------------- */
+@media (max-width: 767px) {
+  .svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+
+  .app-name {
+    font-size: 16px;
+  }
+
+  .pink {
+    padding: 20px 10px;
+    height: auto;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .measure {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+  }
+
+  canvas {
+    width: 90%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .measurements {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-size: 14px;
+  }
+}

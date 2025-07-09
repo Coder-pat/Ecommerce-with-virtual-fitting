@@ -144,3 +144,133 @@ a {
 footer :nth-child(2) {
   padding-right: 10px;
 }
+
+/* ------------------- TABLET (max-width: 1024px) ------------------- */
+@media (max-width: 1024px) {
+  .up {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 140px;
+  }
+
+  .center-text {
+    position: static;
+    transform: none;
+    font-size: 18px;
+  }
+
+  .product-info {
+    right: 10%;
+    top: 25%;
+  }
+
+  .dress {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 40%;
+    height: auto;
+  }
+
+  .logo {
+    width: 60px;
+    height: auto;
+  }
+
+  .svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .info,
+  .brand,
+  .bold,
+  .red {
+    font-size: 25px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: row;
+    text-align: center;
+    padding: 20px 0;
+    gap: 10px;
+  }
+}
+
+/* ------------------- PHONE (max-width: 767px) ------------------- */
+@media (max-width: 767px) {
+  .up {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .center-text {
+    font-size: 16px;
+    margin-right: 70px;
+  }
+
+  .name {
+    justify-content: center;
+  }
+
+  #n {
+    margin-left: 90px;
+  }
+
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+
+  .app-name {
+    font-size: 16px;
+    margin-left: 8px;
+  }
+
+  .svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .dress {
+    width: 90%;
+    margin: 30px auto 0;
+    height: auto;
+  }
+
+  .product-info {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    position: static;
+  }
+
+  .info,
+  .brand,
+  .bold,
+  .red {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 15px;
+    height: 40px;
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+    gap: 10px;
+  }
+}

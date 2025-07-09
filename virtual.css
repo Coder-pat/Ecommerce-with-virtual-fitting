@@ -167,3 +167,163 @@ footer {
 #bodyImage {
   z-index: 1;
 }
+
+/* ------------------- TABLET (max-width: 1024px) ------------------- */
+@media (max-width: 1024px) {
+  .up {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .center-text {
+    position: static;
+    transform: none;
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 60px;
+    height: auto;
+  }
+
+  .svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .photo {
+    width: 35%;
+    height: auto;
+  }
+
+  input {
+    margin-left: 40px;
+  }
+
+  .upload {
+    width: 90%;
+    height: 250px;
+    margin: 20px auto;
+  }
+
+  .grey {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .virtual {
+    justify-content: center;
+    width: 100%;
+    margin-left: 300px;
+  }
+
+  .fitting-area {
+    margin: 0 auto;
+    width: 300px;
+    height: 500px;
+  }
+
+  footer {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 0;
+    gap: 10px;
+  }
+}
+
+/* ------------------- PHONE (max-width: 767px) ------------------- */
+@media (max-width: 767px) {
+  .up {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  #n {
+    margin-right: 0;
+    margin-left: 70px;
+  }
+
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+
+  .app-name {
+    font-size: 18px;
+  }
+
+  .svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .center-text {
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 0;
+  }
+
+  .pink {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 25px;
+    padding-bottom: 15px;
+  }
+
+  .photo {
+    position: relative;
+    width: 85%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .upload {
+    width: 95%;
+    height: 200px;
+    margin: 20px auto;
+  }
+
+  .grey {
+    position: static;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  .virtual {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .fitting-area {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  button {
+    width: 90%;
+    font-size: 15px;
+    height: 42px;
+  }
+
+  footer {
+    position: static;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 0;
+    gap: 10px;
+  }
+}

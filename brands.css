@@ -194,23 +194,22 @@ a {
 /* Tablets (portrait and landscape) */
 @media (max-width: 1024px) and (min-width: 601px) {
   .up {
-    flex-direction: column;
-    height: auto;
-    gap: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 50px;
+    padding-top: 7px;
   }
 
-  .center-text {
-    position: static;
-    transform: none;
-    margin-top: 5px;
+  .svg {
+    width: 25px;
+    height: 25px;
   }
 
   .top {
-    position: static;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     margin-top: 10px;
   }
 
@@ -252,7 +251,8 @@ a {
   .center-text {
     position: static;
     transform: none;
-    font-size: 14px;
+    font-size: 15px;
+    margin-right: 75px;
   }
 
   .top {
@@ -276,9 +276,9 @@ a {
 
   .brand {
     width: 96%;
-    height: 180px;
+    height: 150px;
     font-size: 24px;
-    margin: 10px 0;
+    margin: 0;
   }
 
   h1 {
@@ -295,5 +295,25 @@ a {
 
   .app-n {
     font-size: 16px;
+  }
+
+  .up {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .app-name {
+    margin-right: 100px;
+  }
+
+  #n {
+    margin-left: 70px;
   }
 }

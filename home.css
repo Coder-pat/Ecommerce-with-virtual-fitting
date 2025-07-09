@@ -149,6 +149,11 @@ html {
   position: relative;
 }
 
+h2 {
+  font-family: "Instrument sans";
+  margin-left: 50px;
+}
+
 .p-de:nth-child(1) {
   margin-left: 40px;
 }
@@ -199,4 +204,194 @@ h1 {
 #active {
   background-color: #9a1e14;
   color: #fff;
+}
+
+/* ------------------- TABLET (max-width: 1024px) ------------------- */
+@media (max-width: 1024px) {
+  .banner {
+    flex-direction: row;
+    width: 90%;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .black-red {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .sale {
+    margin-left: 0;
+    font-size: 30px;
+    justify-content: center;
+  }
+
+  .categories {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    gap: 20px;
+  }
+
+  .cat {
+    width: 30%;
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .trending {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .desc,
+  .descr {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 0;
+  }
+
+  .p-d,
+  .p-de {
+    margin: 0;
+    text-align: center;
+  }
+
+  .top {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .center-text {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+}
+
+/* ------------------- PHONE (max-width: 767px) ------------------- */
+@media (max-width: 767px) {
+  .up {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    gap: 8px;
+  }
+
+  .up {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .center-text {
+    position: static;
+    transform: none;
+    font-size: 15px;
+    margin-right: 75px;
+  }
+
+  #n {
+    margin-left: 70px;
+  }
+
+  h2 {
+    margin-left: 100px;
+  }
+
+  .trending {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .trend {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .logo {
+    width: 60px;
+    height: auto;
+  }
+
+  .app-name {
+    margin-right: 100px;
+  }
+
+  .svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .banner {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+    width: 85%;
+  }
+
+  .black-red {
+    display: none;
+  }
+
+  .sale {
+    font-size: 28px;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .categories {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    gap: 10px;
+  }
+
+  .cat {
+    width: 30%;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .p-d,
+  .p-de {
+    text-align: center;
+    margin: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .product {
+    width: 40%;
+  }
+
+  h1 {
+    text-align: center;
+    margin-left: 0;
+  }
 }
